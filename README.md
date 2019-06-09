@@ -1,5 +1,7 @@
 # Fact Checker
-### How to run
+### Requirement
+It is strongly recommended to allow the JVM to use a RAM amount of 6 GB using the VM argument `-Xmx6144m`
+## How to run
 Given:
 * Training data in the following format:<br/>
 ```
@@ -35,7 +37,7 @@ following format:
 ```
 <http://swc2017.aksw.org/task2/dataset/Fact-ID> <http://swc2017.aksw.org/hasTruthValue> "value"^^<http://www.w3.org/2001/XMLSchema#float> .
 ```
-### Example:
+## Example:
 Given training data in: `E:\Dataset_Train.nt`, test data in: `E:\Dataset_Test.nt` and a knowledge base in: `E:\mappingbased_objects_en.ttl`
 * After running `java TDBGenerator E:\mappingbased_objects_en.ttl E:\MyKnowledgeGraph` the knowledge graph given in ttl file will be 
 converted to TDB data structure and stored in the directory `E:\MyKnowledgeGraph`
