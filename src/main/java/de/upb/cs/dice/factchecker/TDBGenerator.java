@@ -1,4 +1,4 @@
-package de.upb.cs.dice.sw9000_factchecker;
+package de.upb.cs.dice.factchecker;
 
 import java.io.InputStream;
 import org.apache.jena.query.Dataset;

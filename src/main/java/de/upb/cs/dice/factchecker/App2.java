@@ -1,4 +1,4 @@
-package de.upb.cs.dice.sw9000_factchecker;
+package de.upb.cs.dice.factchecker;
 import org.apache.jena.datatypes.xsd.XSDDatatype;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QuerySolution;
