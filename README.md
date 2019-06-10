@@ -42,6 +42,6 @@ Given training data in: `E:\Dataset_Train.nt`, test data in: `E:\Dataset_Test.nt
 * After running `java TDBGenerator E:\mappingbased_objects_en.ttl E:\MyKnowledgeGraph` the knowledge graph given in ttl file will be 
 converted to TDB data structure and stored in the directory `E:\MyKnowledgeGraph`
 * After running `java App E:\Dataset_Test.nt E:\MyKnowledgeGraph E:\Result.nt` the truth values of the statements in the test data
-will be computed and stored in a file at `E:\Result.nt` using the formated explained above.
+will be computed and stored in a file at `E:\Result.nt` using the format explained above.
 * After running `java App2 E:\Dataset_Train E:\Dataset_Test.nt E:\mappingbased_objects_en.ttl E:\Result.nt` the truth values of the statements in the test data
-will be computed and stored in a file at `E:\Result.nt` using the formated explained above.
+will be computed and stored in a file at `E:\Result.nt` using the format explained above.
