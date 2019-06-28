@@ -81,12 +81,7 @@ public class App
  			
     			QueryExecution qexec = QueryExecutionFactory.create("ASK {<"+subject+"> <"+predicate+"> <"+object+">.}",dataset);
     			
-    			// If fact is in the knowledge graph, set truth value = 1
-            	if (qexec.execAsk())
-            	{	truthValue=1f; 	qexec.close();	}
-            	// If fact is not in the knowledge graph, then:
-            	else
-            	{
+            	
             	// Look in the knowledge base for other subjects and objects that are linked via the given predicate, look for predicates other than the given one that link them and check how many of these predicates link also the subject and object of our statement being studied.
             	float expected=0f, expectedAndExisting=0f;
       	       
@@ -155,7 +150,7 @@ public class App
     			truthValue=(expected==0)?-1f:2.7f*(expectedAndExisting/expected-1f)+1.7f;	
     			truthValue=(truthValue>1)?1.0f:truthValue;
     			truthValue=(truthValue<-1)?-1.0f:truthValue;
-            	}
+            	
             	
             	// Write the result (i.e. the fact-Id with its corresponding computed truth value) to the in-memory output model
         		model_out.add(sub,new PropertyImpl("http://swc2017.aksw.org/hasTruthValue"),model_out.createTypedLiteral(String.valueOf(truthValue),XSDDatatype.XSDfloat));  	

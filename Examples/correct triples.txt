@@ -1,0 +1,38 @@
+Correct facts that are considered by our system as false:
+
+<http://dbpedia.org/resource/Club_Atlas> <http://dbpedia.org/ontology/owner> <http://dbpedia.org/resource/Grupo_Salinas> .
+<http://dbpedia.org/resource/Diego_Perrone__3> <http://dbpedia.org/ontology/team> <http://dbpedia.org/resource/Club_Atlas> .
+<http://dbpedia.org/resource/Club_Atlas> <http://dbpedia.org/ontology/league> <http://dbpedia.org/resource/Liga_MX> .
+<http://dbpedia.org/resource/Club_Atlas> <http://dbpedia.org/ontology/chairman> <http://dbpedia.org/resource/Gustavo_Guzmán> .
+<http://dbpedia.org/resource/United_States> <http://dbpedia.org/ontology/governmentType> <http://dbpedia.org/resource/Federalism> .
+<http://dbpedia.org/resource/Chris_Brokaw> <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/New_York_City> .
+<http://dbpedia.org/resource/DB_Schenker> <http://dbpedia.org/ontology/locationCity> <http://dbpedia.org/resource/Frankfurt> .
+
+
+
+First example:
+There are:
+<http://dbpedia.org/resource/Lira_Hospital> <http://dbpedia.org/ontology/owner> <http://dbpedia.org/resource/Uganda_Ministry_of_Health> .
+<http://dbpedia.org/resource/PS_Maid_of_the_Loch> <http://dbpedia.org/ontology/owner> <http://dbpedia.org/resource/Loch_Lomond_Steamship_Company> .
+<http://dbpedia.org/resource/Dunedin_Public_Hospital> <http://dbpedia.org/ontology/owner> <http://dbpedia.org/resource/Southern_District_Health_Board> .
+<http://dbpedia.org/resource/Hanna_Theatre> <http://dbpedia.org/ontology/owner> <http://dbpedia.org/resource/PlayhouseSquare> .
+<http://dbpedia.org/resource/Ffestiniog_Power_Station> <http://dbpedia.org/ontology/owner> <http://dbpedia.org/resource/First_Hydro> .
+...... etc
+in total there are 60346 pairs.
+Relations between them other than <http://dbpedia.org/ontology/owner> are: 
+<http://dbpedia.org/ontology/owningCompany>
+<http://dbpedia.org/ontology/type>
+<http://dbpedia.org/ontology/owningOrganisation>
+<http://dbpedia.org/ontology/maintainedBy>
+<http://dbpedia.org/ontology/isPartOf>
+<http://dbpedia.org/ontology/operator>
+<http://dbpedia.org/ontology/tenant>
+<http://dbpedia.org/ontology/location>
+<http://dbpedia.org/ontology/builder>
+<http://dbpedia.org/ontology/successor>
+...... etc
+in total there are 66 such relations.
+From theses 66 relations, there is no one between <http://dbpedia.org/resource/Club_Atlas> and <http://dbpedia.org/resource/Grupo_Salinas>.
+Therefore, the fact is considered as false, although it is correct.
+
+Other examples analogously.

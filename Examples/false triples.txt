@@ -1,0 +1,30 @@
+False facts that are considered by our system as correct:
+
+<http://dbpedia.org/resource/Canada> <http://dbpedia.org/ontology/officialLanguage> <http://dbpedia.org/resource/Slavey_language>.
+<http://dbpedia.org/resource/Norway> <http://dbpedia.org/ontology/officialLanguage> <http://dbpedia.org/resource/Kven_language>.
+<http://dbpedia.org/resource/Ecuador> <http://dbpedia.org/ontology/officialLanguage> <http://dbpedia.org/resource/Shuar_language>.
+<http://dbpedia.org/resource/Argentina> <http://dbpedia.org/ontology/officialLanguage> <http://dbpedia.org/resource/Toba_Qom_language>.
+<http://dbpedia.org/resource/Ecuador> <http://dbpedia.org/ontology/officialLanguage> <http://dbpedia.org/resource/Shuar_language>.
+
+
+
+First example:
+There are:
+<http://dbpedia.org/resource/South_Korea> <http://dbpedia.org/ontology/officialLanguage>  <http://dbpedia.org/resource/Korean_language>
+<http://dbpedia.org/resource/North_Korea> <http://dbpedia.org/ontology/officialLanguage>  <http://dbpedia.org/resource/Korean_language>
+<http://dbpedia.org/resource/United_States_Virgin_Islands> <http://dbpedia.org/ontology/officialLanguage> <http://dbpedia.org/resource/English_language>
+<http://dbpedia.org/resource/Germany> <http://dbpedia.org/ontology/officialLanguage> <http://dbpedia.org/resource/German_language>
+<http://dbpedia.org/resource/Syria> <http://dbpedia.org/ontology/officialLanguage> <http://dbpedia.org/resource/Arabic_language>
+<http://dbpedia.org/resource/Sweden> <http://dbpedia.org/ontology/officialLanguage> <http://dbpedia.org/resource/Swedish_language>
+...... etc
+in total there are 559 pairs.
+Relations between them other than <http://dbpedia.org/ontology/officialLanguage> are: 
+<http://dbpedia.org/ontology/language>
+<http://dbpedia.org/ontology/regionalLanguage>
+<http://dbpedia.org/ontology/ethnicGroup>
+<http://www.w3.org/2000/01/rdf-schema#seeAlso>
+
+From theses 4 relations, there are two of them (the first one and the second one) that link <http://dbpedia.org/resource/Canada> and <http://dbpedia.org/resource/Slavey_language>.
+Therefore, the truth value of the fact is computed as 0.62, although it is false.
+
+Other examples analogously.
